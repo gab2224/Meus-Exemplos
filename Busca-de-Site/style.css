@@ -1,0 +1,17 @@
+/*Link não visitado */
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+/*Link já visitado*/
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+/*Quando o mouse passa por cima*/
+a:hover {
+  color: blue;
+  text-decoration: none;
+}

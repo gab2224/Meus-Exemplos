@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#menu-h{
+    background-color: rgb(37, 37, 39);
+}
+
+#menu-h ul {
+    max-width: 800px;
+    list-style: none;
+    padding: 0;
+    border-radius: 10px;
+}
+
+#menu-h ul li {
+    display: inline;
+   border-radius: 10px;
+}
+
+#menu-h ul li a {
+    color: #FFF;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background .4s;
+    border-radius: 10px;
+}
+
+#menu-h ul li a:hover {
+    background-color: rgb(24, 139, 233);
+    border-radius: 10px;
+}
+
+#menu-h ul li:last-child a {
+    float: right;
+    background-color: rgb(24, 139, 233);
+    border-radius: 10px;
+}
+
+
+body {
+  background-image: url('http://www.fundospaisagens.com/1920x1080/floresta-no-outono.jpg');
+}
+
+
+.botao {
+  display: inline-block;
+  padding: 12px 18px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-family: Sans-serif;
+  font-weight: bold;
+  overflow: hidden;
+  position: relative;
+  margin: 10px;
+  z-index: 0;
+}
+botao span {
+  text-transform: uppercase;
+  font-size: 16px;
+  position: relative;
+  z-index: 0;
+  background: linear-gradient(to right, #e60000, #5bafe4); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.botao:before {
+  content: '';
+  background: linear-gradient(to right, #e60000, #5bafe4); 
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -2;
+}
+.botao:after {
+  content: '';
+  background: #fff;
+  top: 2px;
+  bottom: 2px;
+  left: 2px;
+  right: 2px;
+  position: absolute;
+  border-radius: 8px;
+  z-index: -1;
+}
+
+/*Link não visitado */
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+/*Link já visitado*/
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+/*Quando o mouse passa por cima*/
+a:hover {
+  color: gray;
+  text-decoration: none;
+}
+
+/*Link ativo/selecionado*/
+a:active {
+  color: red;
+  text-decoration: none;
+}

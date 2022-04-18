@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helloa</title>
+    <style>
+      body{
+      background: rgb(24,22,107);
+background: radial-gradient(circle, rgba(24,22,107,1) 0%, rgba(3,2,88,1) 49%);
+      }
+      #td2{
+        background: rgb(54,100,139);
+        opacity : 0.8;
+          border:none;
+   border-collapse:collapse;
+      }
+      
+      #td3{
+        border:none;
+   border-collapse:collapse;}
+      
+#Object {
+-webkit-box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0); 
+box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0);  
+  border-radius: 10px;
+  border:none;
+   border-collapse:collapse;
+}
+      h1{
+        color:#F5F5F5;
+      font-size:120px;
+        font-family: Courier, monospace;
+text-shadow: -5px 5px 0px #6495ED, -10px 10px 0px #1E90FF, -15px 15px 0px #483D8B;
+      }
+      
+      h2{
+        font-size: 15px;
+        color: #ffffff;
+        font-family: Courier, monospace;
+    }
+   
+        h3{
+        font-size: 20px;
+        color: #ffffff;
+        font-family: Courier, monospace;
+    }
+  
+       #userCaixa {
+        height: 50px;
+        width: 800px;
+        color: rgb(10, 10, 10);
+        font-size: 25px;
+        font-weight: bold;
+        font-family: Verdana;
+    }
+  
+</style></head>
+  <body>
+    <table id="Object" style="width: 1288px; height: 592px;">
+      <tbody>
+        <tr>
+          <td id="td2" style="text-align: justify; height: 76px;"><br>
+            <h3> 😁 Olá 😉 </h3>
+          </td>
+          <td id="td3" rowspan="4" style="width: 924px; text-align: justify;">
+            <h1 style="text-align: center;"> Helloa</h1>
+            <br>
+            <div style="text-align: center;"><input id="userCaixa" onkeydown="if (event.keyCode == 13) {talk()}"
+                type="text"><br>
+            </div>
+          </td>
+        </tr>
+        <tr align="justify">
+          <td id="td2" style="width: 244px; height: 86.75px;">
+            <h3> Sobre Mim: </h3>
+            <h2> Eu sou uma assistente virtual que atualmente incorpora todo o
+              ecossistema desenvolvido pelo Sobral. A aplicação é capaz de
+              compreender comandos de texto ou de vóz e realizar conversas como
+              um humano. </h2>
+          </td>
+        </tr>
+        <tr align="justify">
+          <td id="td2" style="height: 99px;">
+            <h3> Desenvolvido por:<br>
+              ©Gabriel Sobral| PT </h3>
+          </td>
+        </tr>
+        <tr align="justify">
+          <td id="td2">
+            <div style="margin-left: 40px;">
+              <h2 id="chatLog2"> </h2>
+              <br>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <script>
+   know = {
+
+
+            "Olá": "Olá, muito prazer, sou Hello, estou aqui para te ajudar <br> Primeiramente informe qual o seu problema <br> 1.ansiedade social <br> 2.ansiedade <br> 3.Toc(Transtorno obsessivo e compulsivo ) <br> 4.Depressão <br> 5.Dependência Quimica <br> 6.Bipolaridade <br> 7.Transtorno Explossivo <br> 8.Esquizofrenia <br> 9.Demência <br> 10. Conversar <br> Seleciona qual opção você esta inclusso <br> Lembra-se não de deixarei até que você me falar que esta se sentido melhor 😄 <br>",
+            "Ola": "Olá, muito prazer, sou Hello, estou aqui para te ajudar <br> Primeiramente informe qual o seu problema <br> 1.ansiedade social <br> 2.ansiedade <br> 3.Toc(Transtorno obsessivo e compulsivo ) <br> 4.Depressão <br> 5.Dependência Quimica <br> 6.Bipolaridade <br> 7.Transtorno Explossivo <br> 8.Esquizofrenia <br> 9.Demência <br> 10. Conversar <br> Seleciona qual opção você esta inclusso <br> Lembra-se não de deixarei até que você me falar que esta se sentido melhor 😄 <br>",
+            "olá": "Olá, muito prazer, sou Hello, estou aqui para te ajudar <br> Primeiramente informe qual o seu problema <br> 1.ansiedade social <br> 2.ansiedade <br> 3.Toc(Transtorno obsessivo e compulsivo ) <br> 4.Depressão <br> 5.Dependência Quimica <br> 6.Bipolaridade <br> 7.Transtorno Explossivo <br> 8.Esquizofrenia <br> 9.Demência <br> 10. Conversar <br> Seleciona qual opção você esta inclusso <br> Lembra-se não de deixarei até que você me falar que esta se sentido melhor 😄 <br>",
+            "ola": "Olá, muito prazer, sou Hello, estou aqui para te ajudar <br> Primeiramente informe qual o seu problema <br> 1.ansiedade social <br> 2.ansiedade <br> 3.Toc(Transtorno obsessivo e compulsivo ) <br> 4.Depressão <br> 5.Dependência Quimica <br> 6.Bipolaridade <br> 7.Transtorno Explossivo <br> 8.Esquizofrenia <br> 9.Demência <br> 10. Conversar <br> Seleciona qual opção você esta inclusso <br> Lembra-se não de deixarei até que você me falar que esta se sentido melhor 😄 <br>",
+            "Oi": "Olá, muito prazer, sou Hello, estou aqui para te ajudar <br> Primeiramente informe qual o seu problema <br> 1.ansiedade social <br> 2.ansiedade <br> 3.Toc(Transtorno obsessivo e compulsivo ) <br> 4.Depressão <br> 5.Dependência Quimica <br> 6.Bipolaridade <br> 7.Transtorno Explossivo <br> 8.Esquizofrenia <br> 9.Demência <br> 10. Conversar <br> Seleciona qual opção você esta inclusso <br> Lembra-se não de deixarei até que você me falar que esta se sentido melhor 😄 <br>",
+            "OI": "Olá, muito prazer, sou Hello, estou aqui para te ajudar <br> Primeiramente informe qual o seu problema <br> 1.ansiedade social <br> 2.ansiedade <br> 3.Toc(Transtorno obsessivo e compulsivo ) <br> 4.Depressão <br> 5.Dependência Quimica <br> 6.Bipolaridade <br> 7.Transtorno Explossivo <br> 8.Esquizofrenia <br> 9.Demência <br> 10. Conversar <br> Seleciona qual opção você esta inclusso <br> Lembra-se não de deixarei até que você me falar que esta se sentido melhor 😄 <br>",
+            "oi": "Olá, muito prazer, sou Hello, estou aqui para te ajudar <br> Primeiramente informe qual o seu problema <br> 1.ansiedade social <br> 2.ansiedade <br> 3.Toc(Transtorno obsessivo e compulsivo ) <br> 4.Depressão <br> 5.Dependência Quimica <br> 6.Bipolaridade <br> 7.Transtorno Explossivo <br> 8.Esquizofrenia <br> 9.Demência <br> 10. Conversar <br> Seleciona qual opção você esta inclusso <br> Lembra-se não de deixarei até que você me falar que esta se sentido melhor 😄 <br>",
+            "1": "Sintomas físicos: transpiração excessiva, tremores, gagueira, náusea ou diarreia (ocorrem quando a pessoa se depara com a situração). Sintomas emocionais: ansiedade, angústia, preocupação excessiva por acreditarem que poderão fazer <br> ou falar coisas erradas e evitação constante de situações cotidianas por temer agir de forma humilhante ou constrangedora.<br> São esses os sintomas, caso sim, continue vendo esse chat se não, pode mudar de opção<br>Treinamento para relaxamento e técnicas de respiração podem ajudar uma pessoa a gerenciar seus sintomas de ansiedade. <br>Alguns sintomas de ansiedade física podem ser desencadeados por hiperventilação (overbreathing). Tomar respirações lentas e profundas do abdômen – em vez de respirações rápidas e superficiais do peito<br> – podem reduzir sentimentos ansiosos. As técnicas de relaxamento incluem: <br> relaxamento muscular progressivo, atenção plena, meditação,<br> visualização,Exercícios de relaxamento isométrico,<br> podemos começar <br> então é só buscar uma Musica de relaxamento e relaxar <br> Respira e Inspira, Esta se sentido melhor? <br> Sim ou Não",
+            "Sim": "Que bom poder de Ajudar <br>",
+            "sim": "Que bom poder de Ajudar <br>",
+            "não": "🥺Que pena 😢, nesse caso deve ser procurado uma psicologa profissional 😭 <br>",
+            "Não": "🥺Que pena 😢, nesse caso deve ser procurado uma psicologa profissional 😭 <br>",
+            "Obrigado": "De nada,estarei aqui quando quiser, é só me chamar😄 <br>",
+            "obrigado": "De nada,estarei aqui quando quiser, é só me chamar😄 <br>",
+            "Obrigada": "De nada,estarei aqui quando quiser, é só me chamar😄 <br>",
+            "obrigada": "De nada,estarei aqui quando quiser, é só me chamar😄 <br>",
+            "2": "Bora fazer uma técnica de Relaxamento? <br> 1° senta-se e fecha os olhos,sente-se de um jeito bem relaxado, com as mão reuposando na Barriga <br> 2° Inspira pelo nariz e conta até 4 <br> 3° Segura o Ar contando até 3 <br> 4° Solte pela boca, contando até 6 <br> 5° Repita a respiração o quanto precisar <br> Ou poderemos partir para outro! <br> A primeira tem como foco contrair e relaxar os músculos da cabeça aos pés — que são um seguro de vida. Começa-se pelo rosto, seguindo-se o pescoço e os ombros, que devem ser tensionados e distendidos três vezes, nesta ordem: testa, olhos, nariz, boca, língua, mandíbula, lábios, nuca, pescoço e ombros. Depois, contraem-se os braços e as mãos, alternativamente; as pernas são alongadas (também de modo alternado), levantando-as e percebendo a tensão muscular; em, seguida, as costas, colocando os braços em cruz e levando os cotovelos para trás; o tórax, inspirando e retendo o ar por alguns segundos; e o abdômen e a cintura, tensionando e distendendo os músculos do estômago e dos glúteos. <br> A segunda fase consiste em repassar mentalmente cada uma das partes do corpo trabalhadas, para sentir como relaxaram. A terceira pode ser a mais complicada em um momento de estresse: trata-se de fazer aflorar pensamentos relaxantes.<br> Esta se sentido melhor? <br> Sim ou Não <br>",
+            "3": "O tratamento natural para o transtorno obsessivo compulsivo passa por usar técnicas e comportamentos que a pessoa pode recorrer sempre que precisar aliviar os sintomas do TOC, como meditação, ioga, shiatsu ou reiki, <br> Bora fazer uma técnica de Relaxamento? <br> 1° senta-se e fecha os olhos,sente-se de um jeito bem relaxado, com as mão reuposando na Barriga <br> 2° Inspira pelo nariz e conta até 4 <br> 3° Segura o Ar contando até 3 <br> 4° Solte pela boca, contando até 6 <br> 5° Repita a respiração o quanto precisar <br> Esta se sentido melhor? <br> Sim ou Não <br>",
+            "4": "A depressão é um transtorno mental comum e uma das principais causas de incapacidade em todo o mundo. Globalmente, estima-se que 300 milhões de pessoas são afetadas por essa condição. Mais mulheres sofrem de depressão que homens. <br> A depressão é caracterizada por:<br> 1d tristeza <br> 2d perda de interesse ou prazer <br> 3d sentimentos de culpa <br> 4d baixa autoestima <br> 5d sono <br> 6d apetite alterados<br> 7d cansaço <br> 8d falta de concentração.<br> 9d Insegurança na Orientação Sexual <br> onde você se encaixa <br>",
+            "1d": "Posso de recomendar uns videos de humoristas, Bora Assistir:<br> - Bruna Louise <br> -Caio Martins <br> -Charges.com <br> -Comedy Center <br> Quando estiver triste colocar uma musica ou um video de comédia <br> E ai,coloquei um sorriso na sua cara? 🃏🃏🃏",
+            "1D": "Posso de recomendar uns videos de humoristas, Bora Assistir:<br> - Bruna Louise <br> -Caio Martins <br> -Charges.com <br> -Comedy Center <br> Quando estiver triste colocar uma musica ou um video de comédia <br> E ai,coloquei um sorriso na sua cara? 🃏🃏🃏",
+            "2d": "Bora fazer yoga? 🧘 <br> 1) Fique de pé, com os pés juntos e braços relaxados (postura da montanha - Tadasana). Então, inspire e expire enquanto junta as mãos em posição de prece ao peito (posição de prece - Anjali mudra).<b>2) Inspire e levante os braços em direção ao céu. Incline o corpo para trás, esticando os braços para trás e jogando a pélvis para frente (postura dos braços para cima - Urdhva Hastasana).<b>3) Expire, jogando os braços para frente e os abaixe como se fossem tocar ao chão. Devagar, coloque as palmas das mãos em frente aos pés e a cabeça próxima aos joelhos (postura do alongamento para frente - Uttanasana).<b>4) Inspire, comece a levantar seu corpo devagar, olhando para frente. Ponha as palmas das mãos ao chão. Estique sua perna direita para trás o máximo que conseguir, apoiando-se na ponta do pé; e flexionando a perna esquerda, com o pé firme ao chão; expire (postura do corredor - Ashwa Sanchalanasana).<b>5) Inspire, esticando a perna que estava à frente (esquerda) para trás, alinhada com a perna direita. Mantenha o corpo reto, o olhar para frente, as palmas no chão e apoio na ponta dos pés, como se fosse realizar uma flexão de braço (postura da prancha - Kumbhakasana).<b>6) Abaixe o corpo flexionando os braços, mas não encoste ao chão (prancha baixa - Chaturanga Dandasana).<b>7) Deslize o corpo para frente e mantenha a coluna reta. As solas dos pés devem estar para cima, as palmas das mãos no chão e os braços ligeiramente flexionados (postura do cachorro olhando para cima - Urdhva Mukha Svanasana).<b>8) Devagar, vá colocando os pés no chão. Inspire e novamente faça a postura do corredor (Ashwa Sanchalanasana), como no passo 5 - mas desta vez inverta as pernas. Para isso, sua perna esticada deve ser a esquerda e a flexionada, a direita.<b>9) Vá erguendo o quadril. Coloque ambas pernas para trás. Mantenha as mãos no chão e olhe para baixo. Você ficará em uma posição similar à letra V invertida (postura do cachorro olhando para baixo - Adho Mukha Svanasana).<b> 10) Expire, traga as pernas de trás para frente e repita o passo 3 (postura do alongamento para frente - Uttanasana). <b> 11) Inspire e repita o passo 3 (postura dos braços para cima - Urdhva Hastasana).<b> 12) Para finalizar, volte para frente devagar e repita o passo 2 (posição de prece - Anjali mudra), Eai esta se sentindo melhor?.",
+            "2D": "Bora fazer yoga? 🧘 <br> 1) Fique de pé, com os pés juntos e braços relaxados (postura da montanha - Tadasana). Então, inspire e expire enquanto junta as mãos em posição de prece ao peito (posição de prece - Anjali mudra).<b>2) Inspire e levante os braços em direção ao céu. Incline o corpo para trás, esticando os braços para trás e jogando a pélvis para frente (postura dos braços para cima - Urdhva Hastasana).<b>3) Expire, jogando os braços para frente e os abaixe como se fossem tocar ao chão. Devagar, coloque as palmas das mãos em frente aos pés e a cabeça próxima aos joelhos (postura do alongamento para frente - Uttanasana).<b>4) Inspire, comece a levantar seu corpo devagar, olhando para frente. Ponha as palmas das mãos ao chão. Estique sua perna direita para trás o máximo que conseguir, apoiando-se na ponta do pé; e flexionando a perna esquerda, com o pé firme ao chão; expire (postura do corredor - Ashwa Sanchalanasana).<b>5) Inspire, esticando a perna que estava à frente (esquerda) para trás, alinhada com a perna direita. Mantenha o corpo reto, o olhar para frente, as palmas no chão e apoio na ponta dos pés, como se fosse realizar uma flexão de braço (postura da prancha - Kumbhakasana).<b>6) Abaixe o corpo flexionando os braços, mas não encoste ao chão (prancha baixa - Chaturanga Dandasana).<b>7) Deslize o corpo para frente e mantenha a coluna reta. As solas dos pés devem estar para cima, as palmas das mãos no chão e os braços ligeiramente flexionados (postura do cachorro olhando para cima - Urdhva Mukha Svanasana).<b>8) Devagar, vá colocando os pés no chão. Inspire e novamente faça a postura do corredor (Ashwa Sanchalanasana), como no passo 5 - mas desta vez inverta as pernas. Para isso, sua perna esticada deve ser a esquerda e a flexionada, a direita.<b>9) Vá erguendo o quadril. Coloque ambas pernas para trás. Mantenha as mãos no chão e olhe para baixo. Você ficará em uma posição similar à letra V invertida (postura do cachorro olhando para baixo - Adho Mukha Svanasana).<b> 10) Expire, traga as pernas de trás para frente e repita o passo 3 (postura do alongamento para frente - Uttanasana). <b> 11) Inspire e repita o passo 3 (postura dos braços para cima - Urdhva Hastasana).<b> 12) Para finalizar, volte para frente devagar e repita o passo 2 (posição de prece - Anjali mudra), Eai esta se sentindo melhor?.",
+            "3d": "nesse caso deve ser procurado uma psicologa profissional 😭 <br>",
+            "3D": "nesse caso deve ser procurado uma psicologa profissional 😭 <br>",
+            "4d": "Bom, podemos tentar isso: 1-Elimine a culpa.<br> 2-Não se compare com os outros. <br> 3-Não generalize suas experiências. <br> 4-Confie em si mesmo.<br> 5-Seja mais compassivo com seus erros, errar todo mundo erra.<br> 6-Entenda o que funciona para você. <br> 7-Seja sincero consigo mesmo. <br> 8-Comece a agradecer. <br> isso pode até ajudar, Mas Cara, você é Foda- Pra Caralho <br> Foda-se as Opiniões dos outros, Aqueles que nos magoa tem mais magoa do que nós 😉<br> Esta se sentindo Melhor?",
+            "4D": "Bom, podemos tentar isso: 1-Elimine a culpa.<br> 2-Não se compare com os outros. <br> 3-Não generalize suas experiências. <br> 4-Confie em si mesmo.<br> 5-Seja mais compassivo com seus erros, errar todo mundo erra.<br> 6-Entenda o que funciona para você. <br> 7-Seja sincero consigo mesmo. <br> 8-Comece a agradecer. <br> isso pode até ajudar, Mas Cara, você é Foda- Pra Caralho <br> Foda-se as Opiniões dos outros, Aqueles que nos magoa tem mais magoa do que nós 😉<br> Esta se sentindo Melhor?",
+            "5d": "Coloca uma musica 🎧 que de deixa acordado, se exercita 🤸, cante 🎤 expande esse sono 😄<br>",
+            "5D": "Coloca uma musica 🎧 que de deixa acordado, se exercita 🤸, cante 🎤 expande esse sono 😄<br>",
+            "6d": "nesse caso deve ser procurado uma psicologa profissional 😭 <br>",
+            "6D": "nesse caso deve ser procurado uma psicologa profissional 😭 <br>",
+            "7d": "Coloca uma musica 🎧 que de deixa acordado, se exercita 🤸, cante 🎤 expande esse sono 😄<br>",
+            "7D": "Coloca uma musica 🎧 que de deixa acordado, se exercita 🤸, cante 🎤 expande esse sono 😄<br>",
+            "8d": "Que tal, começa com esses 8 passos: <br> 1° Mantenha o seu espaço de trabalho sempre limpo e organizado.<br> 2° Defina horários específicos para a consulta de emails.<br> 3° Faça pausas de 10 minutos a cada 2 horas.<br> 4° Deixe o seu celular no modo silencioso.<br> 5° Desligue-se das redes sociais.<br> 6° Faça uma coisa de cada vez.<br> 7° Evite conversas paralelas.<br> Isso de Ajudou? <br>",
+            "8D": "Que tal, começa com esses 8 passos: <br> 1° Mantenha o seu espaço de trabalho sempre limpo e organizado.<br> 2° Defina horários específicos para a consulta de emails.<br> 3° Faça pausas de 10 minutos a cada 2 horas.<br> 4° Deixe o seu celular no modo silencioso.<br> 5° Desligue-se das redes sociais.<br> 6° Faça uma coisa de cada vez.<br> 7° Evite conversas paralelas.<br> Isso de Ajudou? <br>",
+            "9d": "Há um consenso geral na comunidade científica de que a orientação sexual das pessoas não é uma escolha, mas sim uma condição. E também não é doença! Desde 1990 que a Organização Mundial da Saúde (OMS) retirou a homossexualidade da Classificação Internacional de Doenças, e há leis para proteger e assegurar a liberdade sexual, vedando qualquer tipo de discriminação. <br> Ainda assim, o Brasil, segundo relatório da Associação Internacional de Gays e Lésbicas, ocupa o primeiro lugar em homicídios de LGBTs na América <br> Amor entre pessoas dos mesmos sexo não é e nunca sera uma doença, a doença mesmo é o preconceito, quando um homem ou mulher heterossexual afirma que a homossexualidade é antinatural, o que eles está dizendo na verdade? Que todos os seres humanos do planeta, se quiserem ser naturais, tem que ser iguais?, Então Ainsten, Thomas Edisson, Philps Tesla não são humanos? . <br> - Há mas eu sou contra o casamento gay, algum gay de pediu em casamento? não, então não se case com um gay!!!  <br><br>Racismo não é opinião <br> Homofobia não é opinião <br> Biofobia não é opinião <br> TrAnsfobia não é opinião <br> Intolerância religiosa não é opinião <br> Gordofobia não é opinião <br> Machismo não é opinião <br><br> Opinião só deixa de ser opinião quando suas palavras machuca ou ofende outro individuo incondicionalmente.<br><br>Sexualidade e Religião <br> O casamento entre homossexuais não criou problemas para as instituições religiosas; as instituições religiosas criaram problemas para o casamento gay, a homofobia é, indiscutivelmente, o ódio disfarçado de mandamento religioso, e não é pegado ser gay, contestam, baseados na interpretação da mesma Bíblia, sacerdotes cristãos, tanto católicos quanto evangélicos. Para eles, a mensagem de Jesus era de inclusão: se fosse hoje que viesse à Terra, o filho de Deus teria recebido os homossexuais de braços abertos, <br> “Orientação sexual não é o que vai definir a nossa salvação“, afirma o bispo primaz da Igreja Anglicana no Brasil, dom Maurício Andrade. <br> “É muito provável que as pessoas homoafetivas fossem acolhidas por Jesus. O Evangelho que ele pregou foi de contracultura e inclusão dos marginalizados“, opina. <br> Segundo o bispo, ao mesmo tempo que não há nenhuma menção à homossexualidade no Novo Testamento, há várias passagens que demonstram a pregação de Jesus pela inclusão. Não só o conhecido “quem nunca pecou que atire a primeira pedra” à adúltera Maria Madalena <br><b> A homofobia é, indiscutivelmente, o ódio disfarçado de mandamento religioso. <b><br> Quando você pensar em ter nojo da sexualidade de alguém, olhe no espelho, e pense se gostaria que tivessem nojo de você <br>, Não tenha medo do que os outros vão falar, muitos fazem pior e são Aplaudidos, Seja feliz 😘, Consegui de Ajudar?",
+            "9D": "Há um consenso geral na comunidade científica de que a orientação sexual das pessoas não é uma escolha, mas sim uma condição. E também não é doença! Desde 1990 que a Organização Mundial da Saúde (OMS) retirou a homossexualidade da Classificação Internacional de Doenças, e há leis para proteger e assegurar a liberdade sexual, vedando qualquer tipo de discriminação. <br> Ainda assim, o Brasil, segundo relatório da Associação Internacional de Gays e Lésbicas, ocupa o primeiro lugar em homicídios de LGBTs na América <br> Amor entre pessoas dos mesmos sexo não é e nunca sera uma doença, a doença mesmo é o preconceito, quando um homem ou mulher heterossexual afirma que a homossexualidade é antinatural, o que eles está dizendo na verdade? Que todos os seres humanos do planeta, se quiserem ser naturais, tem que ser iguais?, Então Ainsten, Thomas Edisson, Philps Tesla não são humanos? . <br> - Há mas eu sou contra o casamento gay, algum gay de pediu em casamento? não, então não se case com um gay!!!  <br><br>Racismo não é opinião <br> Homofobia não é opinião <br> Biofobia não é opinião <br> TrAnsfobia não é opinião <br> Intolerância religiosa não é opinião <br> Gordofobia não é opinião <br> Machismo não é opinião <br><br> Opinião só deixa de ser opinião quando suas palavras machuca ou ofende outro individuo incondicionalmente.<br><br>Sexualidade e Religião <br> O casamento entre homossexuais não criou problemas para as instituições religiosas; as instituições religiosas criaram problemas para o casamento gay, a homofobia é, indiscutivelmente, o ódio disfarçado de mandamento religioso, e não é pegado ser gay, contestam, baseados na interpretação da mesma Bíblia, sacerdotes cristãos, tanto católicos quanto evangélicos. Para eles, a mensagem de Jesus era de inclusão: se fosse hoje que viesse à Terra, o filho de Deus teria recebido os homossexuais de braços abertos, <br> “Orientação sexual não é o que vai definir a nossa salvação“, afirma o bispo primaz da Igreja Anglicana no Brasil, dom Maurício Andrade. <br> “É muito provável que as pessoas homoafetivas fossem acolhidas por Jesus. O Evangelho que ele pregou foi de contracultura e inclusão dos marginalizados“, opina. <br> Segundo o bispo, ao mesmo tempo que não há nenhuma menção à homossexualidade no Novo Testamento, há várias passagens que demonstram a pregação de Jesus pela inclusão. Não só o conhecido “quem nunca pecou que atire a primeira pedra” à adúltera Maria Madalena <br><b> A homofobia é, indiscutivelmente, o ódio disfarçado de mandamento religioso. <b><br> Quando você pensar em ter nojo da sexualidade de alguém, olhe no espelho, e pense se gostaria que tivessem nojo de você <br>, Não tenha medo do que os outros vão falar, muitos fazem pior e são Aplaudidos, Seja feliz 😘, Consegui de Ajudar?",
+            "5": "nesse caso deve ser procurado uma psicologa profissional 😭 <br>",
+            "6": "O tratamento natural para o transtorno bipolar é complementar, mas não um substituto do tratamento médico, e visa evitar o estresse e a ansiedade, fazendo com que a pessoa se sinta mais equilibrada, evitando novas crises. <br> Desta forma, as pessoas com transtorno bipolar devem praticar exercícios regulares como ioga, pilates ou fazer caminhadas relaxantes e ter uma atividade de lazer, como assistir filmes, ler, pintar, fazer jardinagem ou ter uma alimentação saudável, evitando o consumo de produtos industrializados. <br> Além disso, também pode ajudar a consumir bebidas com propriedades calmantes, como o chá de Erva de São João e passiflora, camomila ou erva-cidreira, por exemplo, ou realizar massagens relaxantes com alguma frequência para diminuir a tensão <br> ",
+            "7": "Bora fazer uma técnica de Relaxamento? <br> 1° senta-se e fecha os olhos,sente-se de um jeito bem relaxado, com as mão reuposando na Barriga <br> 2° Inspira pelo nariz e conta até 4 <br> 3° Segura o Ar contando até 3 <br> 4° Solte pela boca, contando até 6 <br> 5° Repita a respiração o quanto precisar <br> Ou poderemos partir para outro! <br> A primeira tem como foco contrair e relaxar os músculos da cabeça aos pés — que são um seguro de vida. Começa-se pelo rosto, seguindo-se o pescoço e os ombros, que devem ser tensionados e distendidos três vezes, nesta ordem: testa, olhos, nariz, boca, língua, mandíbula, lábios, nuca, pescoço e ombros. Depois, contraem-se os braços e as mãos, alternativamente; as pernas são alongadas (também de modo alternado), levantando-as e percebendo a tensão muscular; em, seguida, as costas, colocando os braços em cruz e levando os cotovelos para trás; o tórax, inspirando e retendo o ar por alguns segundos; e o abdômen e a cintura, tensionando e distendendo os músculos do estômago e dos glúteos. <br> A segunda fase consiste em repassar mentalmente cada uma das partes do corpo trabalhadas, para sentir como relaxaram. A terceira pode ser a mais complicada em um momento de estresse: trata-se de fazer aflorar pensamentos relaxantes.<br> Esta se sentido melhor? <br> Sim ou Não <br>",
+            "8": "Que tal tomar um cha de Erva de São João (Hypericum perforatum) <br> Esta se sentido melhor? <br> Sim ou Não <br>",
+            "9": "nesse caso deve ser procurado uma psicologa profissional 😭 <br>",
+            "10": "então vamos conversa, pode me fazer qualquer pergunta <br>",
+            "p1": "Vou ensinar a vocês a imitar o Bolsonaro, que é bom porque anima a familia, é bem simples o que se faz, você deixa a voz grossa para aparentar masculinidade, deixa a boca meio aperta para aparentar um derrame, fica com a lingua de fora para mostrar a sequela do derrame passado, toda e qualquer frase que você falar você termina com tá ok, para mostrar que você não faz idade do que esta falando e quando te perguntarem alguma coisa pensa na resposta mais retardada que vier na sua cabeça, pronto estara perfeito.<br>",
+            "P1": "Vou ensinar a vocês a imitar o Bolsonaro, que é bom porque anima a familia, é bem simples o que se faz, você deixa a voz grossa para aparentar masculinidade, deixa a boca meio aperta para aparentar um derrame, fica com a lingua de fora para mostrar a sequela do derrame passado, toda e qualquer frase que você falar você termina com tá ok, para mostrar que você não faz idade do que esta falando e quando te perguntarem alguma coisa pensa na resposta mais retardada que vier na sua cabeça, pronto estara perfeito.<br>",
+            "p2": "O lado bom do Bolsonaro é que ele da esperança, se o Bolsonaro se reileger você consegue perde 3kg vai, você consegue até passa na faculdade sem saber nada.<br>",
+            "P2": "O lado bom do Bolsonaro é que ele da esperança, se o Bolsonaro se reileger você consegue perde 3kg vai, você consegue até passa na faculdade sem saber nada.<br>",
+            "p3": "Outro dia eu fiz um post ai veio um cara comentar -AH, MAS NINGUÉM NA HISTÓRIA DO BRASIL NUNCA FWZ PELO BRASIL O QUE O BOLSONARO FEZ, Eu respondi Graças a Deussenão não tinha ninguém vivo nós não estava aqui hoje. <br>",
+            "P3": "Outro dia eu fiz um post ai veio um cara comentar -AH, MAS NINGUÉM NA HISTÓRIA DO BRASIL NUNCA FWZ PELO BRASIL O QUE O BOLSONARO FEZ, Eu respondi Graças a Deussenão não tinha ninguém vivo nós não estava aqui hoje. <br>",
+            "p4": "Uma coisa a gente não pode negar, Tem uma grande vantagem no governo Bolsonaro, nunca foi tão fácil achar espaço no congelador <br>",
+            "P4": "Uma coisa a gente não pode negar, Tem uma grande vantagem no governo Bolsonaro, nunca foi tão fácil achar espaço no congelador <br>",
+            "Tchau": "Tchau 👋 <br>",
+            "tchau": "Tchau 👋 <br>",
+
+        };
+
+        function talk() {
+            var user = document.getElementById("userCaixa").value;
+            document.getElementById("userCaixa").value = "";
+            document.getElementById("chatLog2").innerHTML += user + "<br>";
+            if (user in know) {
+                document.getElementById("chatLog2").innerHTML += know[user] + "<br>";
+            } else {
+                document.getElementById("chatLog2").innerHTML += "Responder com a opção, entendido? <br>";
+            }
+        }
+</script> </body>
+</html>

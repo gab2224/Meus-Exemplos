@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#menu-h{
+    background-color: rgb(37, 37, 39);
+}
+
+#menu-h ul {
+    max-width: 800px;
+    list-style: none;
+    padding: 0;
+    border-radius: 10px;
+}
+
+#menu-h ul li {
+    display: inline;
+   border-radius: 10px;
+}
+
+#menu-h ul li a {
+    color: #FFF;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background .4s;
+    border-radius: 10px;
+}
+
+#menu-h ul li a:hover {
+    background-color: rgb(24, 139, 233);
+    border-radius: 10px;
+}
+
+#menu-h ul li:last-child a {
+    float: right;
+    background-color: rgb(24, 139, 233);
+    border-radius: 10px;
+}
+
+
+body {
+  background-image: url('http://www.fundospaisagens.com/1920x1080/floresta-no-outono.jpg');
+}
+
+
+/*Link não visitado */
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+/*Link já visitado*/
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+/*Quando o mouse passa por cima*/
+a:hover {
+  color: gray;
+  text-decoration: none;
+}
+
+/*Link ativo/selecionado*/
+a:active {
+  color: red;
+  text-decoration: none;
+}
